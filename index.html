@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- import jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+</head>
+
+<body>
+    <div id="header">
+    <div>
+      <label for="difficulty">Difficulty:</label>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium" selected>Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+    </div>
+    <div>
+      <button id="startBtn">Start</button>
+      <button id="resetBtn">Reset</button>
+      <button id="themeToggleBtn">Toggle Theme</button>
+    </div>
+    <div id="status">
+      <span id="clicks">Clicks: 0</span> |
+      <span id="matches">Matched: 0</span> |
+      <span id="remaining">Remaining: 0</span> |
+      <span id="total">Total: 0</span> |
+      <span id="time">Time Left: 0s</span>
+    </div>
+  </div>
+
+  <div id="game_grid"></div>
+</body>
+
+</html>
